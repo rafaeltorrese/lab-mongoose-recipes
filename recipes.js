@@ -67,3 +67,6 @@ Recipe.create({title: 'Tlalpenio Soup'. level:'Easy Peasy' , ingredients:['chick
 	console.log(title)
     })
     
+
+
+

@@ -52,7 +52,18 @@ const recipeSchema = new Schema({
 
     created:{
 	type:Date,
-	default:today,
+	default:Date.now,
     }
     
 })
+
+
+const Recipe = mongoose.model('Recipe' , recipeSchema);
+module.exports = Recipe;
+
+
+Recipe.create({title: 'Tlalpenio Soup'. level:'Easy Peasy' , ingredients:['chicken' , 'tomatoe sauce' , 'sauce'] , cuisine:'Mexican',dishType:'Dish', duration:30, cretor:'Daddy Rafa' })
+    .then(()=>{
+	console.log(title)
+    })
+    
